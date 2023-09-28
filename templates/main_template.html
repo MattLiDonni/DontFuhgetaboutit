@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% if title %}
+               {{ title }} -
+        {% endif %}
+        (Don't) Fuhgetaboutit!
+    </title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <header>
+        <h1><a class="logo" href="/">(Don't) Fuhgetaboutit!</a></h1>
+    <h2>A To-Do list app by Matthew LiDonni</h2>
+    <nav>
+        <a id="navitem-1" href="/">Home</a>
+        <a id="navitem-2" href="/new">New Task</a>
+        <a id="navitem-3" href="/about">About</a>
+    </nav>
+    </header>
+
+    {% block content %}{% endblock content %}
+
+</body>
+<footer>
+    <p>Site by Matthew LiDonni, these notes are not user specific (yet) and you should not be using this site for any actual to do list.</p>
+</footer>
+</html>

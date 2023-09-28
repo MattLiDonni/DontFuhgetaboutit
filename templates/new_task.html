@@ -1,0 +1,19 @@
+{% extends "main_template.html" %}
+
+{% block content %}
+    {% if errors.__len__() > 0 %}
+        <div class="error-box">
+            {% for error in errors %}
+                <p class="error-pop">{{ error }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <form action="#" method="post" id="taskform">
+        <label for="title">Task:</label><br>
+        <input id="taskform-title" type="text" name="title" maxlength="32"><br>
+        <label for="notes">Notes:</label><br>
+        <textarea name="notes" maxlength="256"></textarea><br>
+        <input type="submit" value="Create">
+    </form>
+{% endblock content %}

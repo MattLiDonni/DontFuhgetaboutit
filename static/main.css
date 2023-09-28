@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'NanumPenScript-Regular'; /*a name to be used later*/
+    src: url('/static/NanumPenScript-Regular.ttf'); /*URL to font*/
+}
+
+body {
+    background-image: url('/static/CityBG.png');
+    background-position: bottom;
+    background-attachment: fixed;
+    font-family: 'NanumPenScript-Regular';
+    font-size: 130%;
+}
+
+
+header, footer {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+footer {
+    background-color: rgba(255,255,255,.6);
+    margin: auto;
+    width: 60%;
+}
+
+.logo, .logo:visited {
+    color: black;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+nav > a {
+    margin: 0;
+    border: 3px solid;
+    padding: .15em 2.5em;
+    font-size: 175%;
+    text-decoration: none;
+}
+
+#navitem-1 {
+    background-color: #008C45;
+}
+
+#navitem-2 {
+    background-color: #F4F9FF;
+}
+
+#navitem-3 {
+    background-color: #CD212A;
+}
+
+#navitem-1:visited, #navitem-2:visited, #navitem-3:visited {
+    color: black;
+}
+
+#navitem-1:hover, #navitem-2:hover, #navitem-3:hover {
+    box-shadow: 2px 3px 4px rgba(0,0,0,.5);
+}
+
+#taskform {
+    margin: 1.25em 2em 2em;
+    text-align: center;
+    font-size: 200%;
+
+}
+#taskform > input {
+    font-size: 100%;
+    margin-bottom: 1em;
+    font-family: NanumPenScript-Regular;
+}
+
+#taskform-title {
+    width: 12em;
+    background-color: rgba(255,255,255,.6);
+    border: none;
+}
+
+#taskform > textarea {
+    font-size: 100%;
+    resize: none;
+    background-color: rgba(255,255,255,.6);
+    border: none;
+    height: 6em;
+    width: 22em;
+    font-family: NanumPenScript-Regular;
+}
+
+
+
+.task_item {
+    border: none;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 2em;
+    background-color: rgba(255,255,255,.6);
+}
+
+.task_title {
+    margin: .25em;
+    font-size: 2em;
+}
+.task_notes {
+    margin: .25em;
+    font-size: 1.25em;
+}
+
+.task_date {
+    margin: 0 .5em 0 0;
+    float: right;
+    font-size: 1.3em;
+}
+
+.task_submit {
+    background-color: rgba(0,0,0,.1);
+    font-family: NanumPenScript-Regular;
+    margin: 0 .2em .2em;
+    font-size: 2em;
+    border: 1px;
+}
+
+.task_submit:hover {
+    box-shadow: 2px 3px 4px rgba(0,0,0,.5);
+}
+
+#about {
+    margin: 4em auto auto;
+    text-align: center;
+    background-color: rgba(255,255,255,.8);
+    width: 70%;
+
+}
+
+#about > p {
+    font-family: Calibri;
+    margin: auto auto 3em;
+}
+
+.error-box {
+    margin: 1.5em auto auto;
+    width: 30%;
+    border: solid red 2px;
+    border-radius: 10px;
+    background-color: #ff626d;
+    text-align: center;
+}
+

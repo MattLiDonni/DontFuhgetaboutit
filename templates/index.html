@@ -1,0 +1,18 @@
+{% extends "main_template.html" %}
+
+{% block content %}
+
+    {% for task in tasks %}
+        <div class="task_item">
+                <h4 class="task_title">{{ task.title }}</h4>
+                <p class="task_notes">{{ task.notes }}</p>
+                <h6 class="task_date">Created {{ task.created.strftime("%b-%d-%y %I:%M %p") }}</h6>
+            <form action="#" method="post">
+                <input type="hidden" name="id" value="{{ task.id }}">
+                <input class="task_submit" type="submit" value="Complete Task">
+            </form>
+        </div>
+    {% endfor %}
+
+
+{% endblock content %}
